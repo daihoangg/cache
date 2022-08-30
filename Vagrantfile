@@ -27,13 +27,10 @@ Vagrant.configure("2") do |config|
     apt -y update
     apt -y upgrade
     
-    # install screen
-    apt install -y screen
-    
     # change pass root = 123456
-    echo "123456" | passwd --stdin root
-    sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
-    systemctl reload sshd
+    #echo "123456" | passwd --stdin root
+    #sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+    #systemctl reload sshd
     
   SHELL
 
