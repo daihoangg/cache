@@ -27,12 +27,14 @@ Vagrant.configure("2") do |config|
     apt -y update
     apt -y upgrade
     
+  SHELL
+    
     # change pass root = 123456
     #echo "123456" | passwd --stdin root
     #sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
     #systemctl reload sshd
-    
-  SHELL
+  #SHELL
+
 
 
   # Create a forwarded port mapping which allows access to a specific port
